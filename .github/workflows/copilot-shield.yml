@@ -1,4 +1,4 @@
-name: CopilotShield Security Audit
+name: Run CopilotShield Gatekeeper
 
 on:
   pull_request:
@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run CopilotShield Gatekeeper
-        uses: HackToBerFest-VVCE/t2c2-crystal-meth-od@main
+        uses: niranjangowdakm423-gif/copilotshield@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           min_trust_score: "80"
